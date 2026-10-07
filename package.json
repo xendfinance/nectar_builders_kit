@@ -1,0 +1,44 @@
+{
+  "name": "nectar-builders-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Forkable reference interface for builders integrating the Nectar Builder Fee API. Runs on an in-browser mock backend until the API is live.",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ci": "vitest run",
+    "tscheck": "tsc --noEmit",
+    "prettier": "prettier --write \"src/**/*.{ts,tsx,css}\""
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.104.1",
+    "clsx": "2.1.1",
+    "lightweight-charts": "5.2.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "5.3.4",
+    "recharts": "2.15.4",
+    "viem": "2.57.3"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "@types/react-router-dom": "5.3.3",
+    "@vitejs/plugin-react": "4.7.0",
+    "autoprefixer": "10.6.1",
+    "postcss": "8.5.29",
+    "tailwindcss": "3.4.19",
+    "typescript": "5.9.3",
+    "vite": "6.4.4",
+    "vitest": "3.2.7"
+  },
+  "packageManager": "yarn@4.13.0",
+  "resolutions": {
+    "vite": "6.4.4",
+    "@types/react": "18.3.31"
+  }
+}

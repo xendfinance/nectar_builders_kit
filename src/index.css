@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-surface-base font-sans text-ink antialiased;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply rounded-md border border-surface-line bg-surface-base px-2.5 py-1.5 text-sm text-ink outline-none;
+    @apply focus:border-primary;
+  }
+
+  input[type="checkbox"] {
+    @apply h-3.5 w-3.5 p-0 accent-primary;
+  }
+
+  input[type="range"] {
+    @apply border-0 bg-transparent p-0 accent-primary;
+  }
+}
+
+@layer components {
+  .data-table {
+    @apply w-full border-collapse text-left text-xs;
+  }
+
+  .data-table th {
+    @apply whitespace-nowrap border-b border-surface-line px-3 py-2 font-medium text-ink-muted;
+  }
+
+  .data-table td {
+    @apply whitespace-nowrap border-b border-surface-line/60 px-3 py-2 text-ink;
+  }
+
+  .num {
+    @apply text-right tabular-nums;
+  }
+}
